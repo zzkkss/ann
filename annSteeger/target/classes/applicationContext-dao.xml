@@ -1,0 +1,69 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+
+<property name="locations">
+            <list>
+                <value>classpath:init.properties</value>
+            </list>
+        </property>
+</bean>
+   <!-- 配置dataSource选用c3p0方式 -->
+<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${datasource.driverClassName}" />
+		<property name="jdbcUrl"
+			value="${datasource.url}" />
+		<property name="user" value="${datasource.username}" />
+		<property name="password" value="${datasource.password}" />
+		<property name="minPoolSize" value="2" />
+		<property name="maxPoolSize" value="50" />
+		<property name="initialPoolSize" value="10" />
+		<property name="maxIdleTime" value="60" />
+		<property name="acquireIncrement" value="2" />
+</bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+        <property name="dataSource"><ref local="dataSource" /></property>
+      <property name="mappingDirectoryLocations">  
+                <list>  
+                <!-- 以下用来列出Hibernate映射文件-->
+                    <value>classpath*:/com/gw/model</value>  
+                </list> 
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+                <prop key="hibernate.jdbc.fetch_size">${hibernate.jdbc.fetch_size}</prop>
+                <prop key="hibernate.jdbc.batch_size">${hibernate.jdbc.batch_size}</prop>
+                <prop key="hibernate.connection.release_mode">after_transaction</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean abstract="true" lazy-init="true" id="hibernateDao">
+        <property name="sessionFactory"><ref local="sessionFactory" /></property>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory"><ref local="sessionFactory" /></property>
+        <property name="dataSource"><ref local="dataSource" /></property>
+    </bean>
+
+    <bean id="txProxyTemplate" abstract="true" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager"><ref bean="transactionManager" /></property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="create*">PROPAGATION_REQUIRED,-cn.lbsoa.exception.ApplyException</prop>
+                <prop key="save*">PROPAGATION_REQUIRED,-cn.lbsoa.exception.ApplyException</prop>
+                <prop key="remove*">PROPAGATION_REQUIRED,-cn.lbsoa.exception.ApplyException</prop>
+                <prop key="update*">PROPAGATION_REQUIRED,-cn.lbsoa.exception.ApplyException</prop>
+                <prop key="delete*">PROPAGATION_REQUIRED,-cn.lbsoa.exception.ApplyException</prop>
+                <prop key="batch*">PROPAGATION_REQUIRED,-cn.lbsoa.exception.ApplyException</prop>
+                <prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>

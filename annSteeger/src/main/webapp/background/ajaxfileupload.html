@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ajax File Uploader Plugin For Jquery</title>
+<link href="jscss/AjaxFileUploader/ajaxfileupload.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="jscss/js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="jscss/AjaxFileUploader/ajaxfileupload.js"></script>
+	<script type="text/javascript">
+	
+    var count = 1;  
+    /** 
+    * 生成多附件上传框 
+    */  
+    function createInput(parentId){  
+        count++;  
+        var str = '<div name="div" ><font style="font-size:12px;">附件</font>'+  
+        '   '+ '<input type="file" contentEditable="false" id="file' + count + '' +  
+        '" name="file" value="" style="width: 220px"/><input type="button"  value="删除" onclick="removeInput(event)" />'+'</div>';  
+        document.getElementById(parentId).insertAdjacentHTML("beforeEnd",str);  
+    }  
+    /** 
+    * 删除多附件删除框 
+    */  
+    function removeInput(evt, parentId){  
+       var el = evt.target == null ? evt.srcElement : evt.target;  
+       var div = el.parentNode;  
+       var cont = document.getElementById(parentId);         
+       if(cont.removeChild(div) == null){  
+        return false;  
+       }  
+       return true;  
+    }  
+    function addOldFile(data){  
+        var str = '<div name="div' + data.name + '" ><a href="#" style="text-decoration:none;font-size:12px;color:red;" onclick="removeOldFile(event,' + data.id + ')">删除</a>'+  
+        '   ' + data.name +   
+        '</div>';  
+        document.getElementById('oldImg').innerHTML += str;  
+    }  
+      
+    function removeOldFile(evt, id){  
+        //前端隐藏域，用来确定哪些file被删除，这里需要前端有个隐藏域  
+        $("#imgIds").val($("#imgIds").val()=="" ? id :($("#imgIds").val() + "," + id));  
+        var el = evt.target == null ? evt.srcElement : evt.target;  
+        var div = el.parentNode;  
+        var cont = document.getElementById('oldImg');      
+        if(cont.removeChild(div) == null){  
+            return false;  
+        }  
+        return true;  
+    }  
+    function ajaxFileUploadImg(id){ 
+    	$("#loading")
+		.ajaxStart(function(){
+			$(this).show();
+		})
+		.ajaxComplete(function(){
+			$(this).hide();
+		});
+        //获取file的全部id  
+        var uplist = $("input[name^=file]");  
+    var file = [];  
+    for (var i=0; i< uplist.length; i++){  
+        if(uplist[i].value){  
+        	file[i] = uplist[i].id;  
+        }  
+        }  
+    $.ajaxFileUpload({  
+        url:'productsImgUpload.do',  
+        secureuri:false,  
+        fileElementId: file,  //这里不在是以前的id了，要写成数组的形式哦！  
+        fileElementName: "file",  //这里不在是以前的id了，要写成数组的形式哦！  
+        dataType: 'text',  
+        data: {  
+                     //需要传输的数据  
+                },  
+        success: function (data){  
+        	alert(data);
+        },  
+        error: function(data){  
+        }  
+    });  
+}
+	</script>	
+	</head>
+
+	<body>
+<div id="wrapper">
+    <div id="content">
+    	<h1>Ajax File Upload Demo</h1>
+    	<p>Jquery File Upload Plugin  - upload your files with only one input field</p>
+				<p>
+				need any Web-based Information System?<br> Please <a href="http://www.phpletter.com/">Contact Us</a><br>
+				We are specialized in <br>
+				<ul>
+					<li>Website Design</li>
+					<li>Survey System Creation</li>
+					<li>E-commerce Site Development</li>
+				</ul>    	
+		<img id="loading" src="loading.gif" style="display:none;">
+		<table cellpadding="0" cellspacing="0" class="tableForm">
+
+		<thead>
+			<tr>
+				<th>Please select a file and click Upload button</th>
+			</tr>
+		</thead>
+		<tbody>	
+			<tr>
+				<td><input id="file" type="file" size="45" name="fileToUpload" class="input"></td>			</tr>
+
+		</tbody>
+			<tfoot>
+				<tr>
+					<td><button class="button" id="buttonUpload" onclick="return ajaxFileUploadImg();">Upload</button></td>
+					<td><button class="button" id="" onclick="createInput('more')">MORE</button></td>
+					<div id="more"></div>
+				</tr>
+			</tfoot>
+	
+	</table>
+    </div>
+    
+
+	</body>
+</html>

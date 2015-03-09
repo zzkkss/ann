@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+ <global-method-security pre-post-annotations="enabled"/>  
+    <!-- 该路径下的资源不用过滤 -->           
+    <http pattern="/js/**" security="none"/>
+    <http use-expressions="true" auto-config="true">
+    	
+        <form-login />
+        <logout/>
+        <!-- 实现免登陆验证 -->
+        <remember-me />
+        <session-management invalid-session-url="/timeout.jsp">
+            <concurrency-control max-sessions="10" error-if-maximum-exceeded="true" />
+        </session-management>
+		<custom-filter ref="myFilter" before="FILTER_SECURITY_INTERCEPTOR"/>
+    </http>
+
+	<!-- 一个自定义的filter，必须包含authenticationManager,accessDecisionManager,securityMetadataSource三个属性， 
+		我们的所有控制将在这三个类中实现，解释详见具体配置 -->
+	<beans:bean id="myFilter"
+		class="cn.lbsoa.security.MyFilterSecurityInterceptor">
+		<!-- 用户拥有的权限 -->  
+		<beans:property name="authenticationManager" ref="authenticationManager" />
+		 <!-- 用户是否拥有所请求资源的权限 -->  
+		<beans:property name="accessDecisionManager" ref="myAccessDecisionManagerBean" />
+		 <!-- 资源与权限对应关系 -->  
+		<beans:property name="securityMetadataSource" ref="securityMetadataSource" />
+	</beans:bean>
+
+	<!-- 认证管理器，实现用户认证的入口，主要实现UserDetailsService接口即可 -->
+	<authentication-manager alias="authenticationManager">
+		<authentication-provider user-service-ref="myUserDetailService">
+			<!-- 如果用户的密码采用加密的话，可以加点“盐” <password-encoder hash="md5" /> -->
+		</authentication-provider>
+	</authentication-manager>
+	<beans:bean id="myUserDetailService"
+		class="cn.lbsoa.security.MyUserDetailService" >
+		</beans:bean>
+
+	<!-- 访问决策器，决定某个用户具有的角色，是否有足够的权限去访问某个资源 -->
+	<beans:bean id="myAccessDecisionManagerBean"
+		class="cn.lbsoa.security.MyAccessDecisionManager">
+	</beans:bean>
+
+	<!-- 资源源数据定义，即定义某一资源可以被哪些角色访问 -->
+	<beans:bean id="securityMetadataSource"
+		class="cn.lbsoa.security.MyInvocationSecurityMetadataSource" >
+		<beans:constructor-arg name="resourcesDao" ref="resourcesDao"></beans:constructor-arg> 
+		</beans:bean>
+</beans:beans>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"  
+        xmlns:sec="http://www.springframework.org/schema/security"  
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+        xsi:schemaLocation="http://www.springframework.org/schema/beans  
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+            http://www.springframework.org/schema/security  
+            http://www.springframework.org/schema/security/spring-security-3.1.xsd">  
+      
+        <!-- 配置不过滤的资源（静态资源及登录相关） -->  
+          
+        <sec:http pattern="/background/login.jsp" security="none"></sec:http>  <!-- 不过滤测试内容 -->  
+        <sec:http pattern="/background/**/*.js" security="none"></sec:http>  <!-- 不过滤测试内容 -->  
+        <sec:http pattern="/background/**/*.css" security="none"></sec:http>  <!-- 不过滤测试内容 -->  
+        <sec:http pattern="/background/**/*.jpg" security="none"></sec:http>  <!-- 不过滤测试内容 -->  
+        <sec:http pattern="/background/**/*.png" security="none"></sec:http>  <!-- 不过滤测试内容 -->  
+        <sec:http pattern="/background/*.do" security="none"></sec:http>  <!-- 不过滤测试内容 -->  
+   
+        <sec:http pattern="/decorators/**" security="none"></sec:http><!-- 不过滤测试内容 -->  
+        <sec:http pattern="/jscss/**" security="none"></sec:http><!-- 不过滤测试内容 -->  
+        <sec:http pattern="/*sina/**" security="none"></sec:http><!-- 不过滤测试内容 -->  
+        <sec:http pattern="/front/**" security="none"></sec:http><!-- 不过滤测试内容 -->  
+        <sec:http pattern="/error/**" security="none"></sec:http><!-- 不过滤测试内容 -->  
+        <sec:http pattern="/updataimg/**" security="none"></sec:http><!-- 不过滤测试内容 -->  
+          
+        <sec:http auto-config="true">  
+              
+            <sec:intercept-url pattern="/background/**" access="ROLE_ADMIN"/>  
+          
+        <sec:form-login login-page="/background/login.jsp" authentication-failure-url="/background/login.jsp"  
+            default-target-url="/background/index.jsp"/>  
+              
+        </sec:http>  
+          
+       <sec:authentication-manager>  
+         <!--     <sec:authentication-provider>  
+                <sec:user-service >  
+                    <sec:user name="admin" password="admin1234567890" authorities="ROLE_ADMIN"/>  
+                </sec:user-service>  
+            </sec:authentication-provider>  
+          -->
+        
+         <!-- 使用内存权限管理的配置信息, 在tomcat启动时,会加载这个文件并一直保存在内存中,知道应用程序重启,所以也叫内存权限管理  
+        <authentication-provider>  
+        <user-service>  
+        <user name="admin" password="tomcat" authorities="ROLE_ADMIN"/>  
+        <user name="liky" password="redhat" authorities="ROLE_USER"/>       
+        </user-service>  
+        </authentication-provider>  
+    -->  
+    <!-- 使用数据库作为权限管理的来源,data-source-ref指定了数据源,所指定的数据源必须包含users, authorities表,并符合security的定义规范 -->  
+     <sec:authentication-provider>  
+        <sec:jdbc-user-service data-source-ref="dataSource" />  
+    </sec:authentication-provider>   
+        </sec:authentication-manager> 
+           <!-- 定义上下文返回的消息的国际化。 -->
+ <bean id="messageSource"
+  class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+  <property name="basename"
+   value="classpath:org/springframework/security/messages_zh_CN"/>
+ </bean>
+          
+    </beans>  

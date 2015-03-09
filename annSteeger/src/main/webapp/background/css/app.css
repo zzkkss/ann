@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+BODY {
+	PADDING-BOTTOM: 0px;
+ 	background-color: #eef1f7;
+	MARGIN: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	
+	FONT-SIZE: 12px;
+	PADDING-TOP: 0px}
+
+.area {
+	BORDER-TOP: #e6e7e2 1px solid;
+	MARGIN: 0px auto;
+	WIDTH: 100%;
+	overflow: hidden;
+}
+
+#header {
+	
+	HEIGHT: 120px;
+	COLOR: #007a77;
+	
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+#footer {
+	TEXT-ALIGN: center;
+	LINE-HEIGHT: 23px;
+
+	background-image: none;
+	BORDER-TOP: #e6e7e2 1px solid;
+	MARGIN: 0px auto;
+	WIDTH: 100%;
+	overflow: hidden;
+	CLEAR: both;
+}
+
+.top{ width:100%; height:89px;}
+.logo {
+  background-color: #fff;
+  border-bottom: 2px solid #ffffff;
+  display: inline;
+  float: left;
+  height: 75px;
+  text-align: center;
+  width: 160px;
+  	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+}
+.logo img{
+  height: 100%;
+  width: 100%;
+}
+.gong{float:right; argin-left: 50%;width:200px; height:80px;}
+#huany {
+  background-color: #eef1f7;
+  color: rgb(68, 76, 99);
+  font-family: "SimSun";
+  font-size: 22px;
+  left: 221.141px;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+}
+
+#functionKey{float:left; margin-top:18px;margin-right:20px;}
+#functionKey ul li{float:left;  margin-left:12px; cursor: pointer;}
+
+
+#functionKey a {
+    /* The section titles */
+   text-decoration:none;
+    display:block;
+}
+
+.sou{float:right; width:240px; margin:50px 12px 0 0}
+.sou p{float:left; width:175px; height:24px;}
+.sou span{float:left; width:54px; height:23px; margin-left:10px; display:inline; margin-top:1px;}
+
+#main{ width:100%; margin-top:8px; float:left; 
+  min-height: 100%; /* For Modern Browsers */
+  height: auto !important; /* For Modern Browsers */
+  height: 100%; /* For IE */
+}
+/* update passwords*/
+#newPassword {background-image:url(../images/updatepassword_data/newPb.png);}
+#cleanChangePassword
+{background-image:url(../images/updatepassword_data/close.png);
+height: 18px;
+    width: 18px;
+ }
+#npbtn{
+	background:url(../images/updatepassword_data/que.jpg);
+	width:69px;height: 27px;
+	}

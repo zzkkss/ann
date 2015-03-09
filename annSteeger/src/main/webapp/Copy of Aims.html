@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aims</title>
+<meta name="keywords"
+	content="Aims, iOS, app store, tasks, change life, aplikace, todo">
+<meta name="description" content="Incredible power of productivity">
+<link rel="shortcut icon" id="favicon"
+	href="http://www.aims-app.com/favicon.png">
+<meta name="author" content="Springspot">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link media="screen" href="Aims_files/styleIndex.css" type="text/css"
+	rel="stylesheet">
+
+<script src="Aims_files/analytics.js" async=""></script>
+<script src="Aims_files/sdk.js" id="facebook-jssdk"></script>
+<script src="Aims_files/widgets.js" id="twitter-wjs"></script>
+<script src="Aims_files/jquery-1.js"></script>
+<script type="text/javascript" src="Aims_files/jquery.js"></script>
+<script type="text/javascript" src="Aims_files/script.js"></script>
+<script charset="utf-8" src="Aims_files/popover-v1.js"></script>
+<link href="Aims_files/onepage-scroll.css" rel="stylesheet"
+	type="text/css">
+
+<script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-56754623-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+<meta name="viewport"
+	content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<!--<meta name="apple-itunes-app" content="app-id=421706526"/>-->
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="Aims_files/main2.css" type="text/css">
+<style type="text/css">
+.fb_hidden {
+	position: absolute;
+	top: -10000px;
+	z-index: 10001
+}
+
+.fb_invisible {
+	display: none
+}
+
+.fb_reset {
+	background: none;
+	border: 0;
+	border-spacing: 0;
+	color: #000;
+	cursor: auto;
+	direction: ltr;
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-height: 1;
+	margin: 0;
+	overflow: visible;
+	padding: 0;
+	text-align: left;
+	text-decoration: none;
+	text-indent: 0;
+	text-shadow: none;
+	text-transform: none;
+	visibility: visible;
+	white-space: normal;
+	word-spacing: normal
+}
+
+.fb_reset>div {
+	overflow: hidden
+}
+
+.fb_link img {
+	border: none
+}
+
+.fb_dialog {
+	background: rgba(82, 82, 82, .7);
+	position: absolute;
+	top: -10000px;
+	z-index: 10001
+}
+
+.fb_reset .fb_dialog_legacy {
+	overflow: visible
+}
+
+.fb_dialog_advanced {
+	padding: 10px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px
+}
+
+.fb_dialog_content {
+	background: #fff;
+	color: #333
+}
+
+.fb_dialog_close_icon {
+	background:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png)
+		no-repeat scroll 0 0 transparent;
+	_background-image:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	position: absolute;
+	right: 18px;
+	top: 17px;
+	width: 15px
+}
+
+.fb_dialog_mobile .fb_dialog_close_icon {
+	top: 5px;
+	left: 5px;
+	right: auto
+}
+
+.fb_dialog_padding {
+	background-color: transparent;
+	position: absolute;
+	width: 1px;
+	z-index: -1
+}
+
+.fb_dialog_close_icon:hover {
+	background:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png)
+		no-repeat scroll 0 -15px transparent;
+	_background-image:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)
+}
+
+.fb_dialog_close_icon:active {
+	background:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png)
+		no-repeat scroll 0 -30px transparent;
+	_background-image:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)
+}
+
+.fb_dialog_loader {
+	background-color: #f6f7f8;
+	border: 1px solid #606060;
+	font-size: 24px;
+	padding: 20px
+}
+
+.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right
+	{
+	height: 10px;
+	width: 10px;
+	overflow: hidden;
+	position: absolute
+}
+
+.fb_dialog_top_left {
+	background:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png)
+		no-repeat 0 0;
+	left: -10px;
+	top: -10px
+}
+
+.fb_dialog_top_right {
+	background:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png)
+		no-repeat 0 -10px;
+	right: -10px;
+	top: -10px
+}
+
+.fb_dialog_bottom_left {
+	background:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png)
+		no-repeat 0 -20px;
+	bottom: -10px;
+	left: -10px
+}
+
+.fb_dialog_bottom_right {
+	background:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png)
+		no-repeat 0 -30px;
+	right: -10px;
+	bottom: -10px
+}
+
+.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom
+	{
+	position: absolute;
+	background: #525252;
+	filter: alpha(opacity = 70);
+	opacity: .7
+}
+
+.fb_dialog_vert_left,.fb_dialog_vert_right {
+	width: 10px;
+	height: 100%
+}
+
+.fb_dialog_vert_left {
+	margin-left: -10px
+}
+
+.fb_dialog_vert_right {
+	right: 0;
+	margin-right: -10px
+}
+
+.fb_dialog_horiz_top,.fb_dialog_horiz_bottom {
+	width: 100%;
+	height: 10px
+}
+
+.fb_dialog_horiz_top {
+	margin-top: -10px
+}
+
+.fb_dialog_horiz_bottom {
+	bottom: 0;
+	margin-bottom: -10px
+}
+
+.fb_dialog_iframe {
+	line-height: 0
+}
+
+.fb_dialog_content .dialog_title {
+	background: #6d84b4;
+	border: 1px solid #3a5795;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0
+}
+
+.fb_dialog_content .dialog_title>span {
+	background:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif)
+		no-repeat 5px 50%;
+	float: left;
+	padding: 5px 0 7px 26px
+}
+
+body.fb_hidden {
+	-webkit-transform: none;
+	height: 100%;
+	margin: 0;
+	overflow: visible;
+	position: absolute;
+	top: -10000px;
+	left: 0;
+	width: 100%
+}
+
+.fb_dialog.fb_dialog_mobile.loading {
+	background:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white
+		no-repeat 50% 50%;
+	min-height: 100%;
+	min-width: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	z-index: 10001
+}
+
+.fb_dialog.fb_dialog_mobile.loading.centered {
+	max-height: 590px;
+	min-height: 590px;
+	max-width: 500px;
+	min-width: 500px
+}
+
+#fb-root #fb_dialog_ipad_overlay {
+	background: rgba(0, 0, 0, .45);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	min-height: 100%;
+	z-index: 10000
+}
+
+#fb-root #fb_dialog_ipad_overlay.hidden {
+	display: none
+}
+
+.fb_dialog.fb_dialog_mobile.loading iframe {
+	visibility: hidden
+}
+
+.fb_dialog_content .dialog_header {
+	-webkit-box-shadow: white 0 1px 1px -1px inset;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA),
+		to(#2C4987));
+	border-bottom: 1px solid;
+	border-color: #1d4088;
+	color: #fff;
+	font: 14px Helvetica, sans-serif;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+	vertical-align: middle;
+	white-space: nowrap
+}
+
+.fb_dialog_content .dialog_header table {
+	-webkit-font-smoothing: subpixel-antialiased;
+	height: 43px;
+	width: 100%
+}
+
+.fb_dialog_content .dialog_header td.header_left {
+	font-size: 12px;
+	padding-left: 5px;
+	vertical-align: middle;
+	width: 60px
+}
+
+.fb_dialog_content .dialog_header td.header_right {
+	font-size: 12px;
+	padding-right: 5px;
+	vertical-align: middle;
+	width: 60px
+}
+
+.fb_dialog_content .touchable_button {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6),
+		color-stop(.5, #355492), to(#2A4887));
+	border: 1px solid #2f477a;
+	-webkit-background-clip: padding-box;
+	-webkit-border-radius: 3px;
+	-webkit-box-shadow: rgba(0, 0, 0, .117188) 0 1px 1px inset,
+		rgba(255, 255, 255, .167969) 0 1px 0;
+	display: inline-block;
+	margin-top: 3px;
+	max-width: 85px;
+	line-height: 18px;
+	padding: 4px 12px;
+	position: relative
+}
+
+.fb_dialog_content .dialog_header .touchable_button input {
+	border: none;
+	background: none;
+	color: #fff;
+	font: 12px Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 2px -12px;
+	padding: 2px 6px 3px 6px;
+	text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+}
+
+.fb_dialog_content .dialog_header .header_center {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+	text-align: center;
+	vertical-align: middle
+}
+
+.fb_dialog_content .dialog_content {
+	background:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif)
+		no-repeat 50% 50%;
+	border: 1px solid #555;
+	border-bottom: 0;
+	border-top: 0;
+	height: 150px
+}
+
+.fb_dialog_content .dialog_footer {
+	background: #f6f7f8;
+	border: 1px solid #555;
+	border-top-color: #ccc;
+	height: 40px
+}
+
+#fb_dialog_loader_close {
+	float: left
+}
+
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_button {
+	text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+}
+
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+	visibility: hidden
+}
+
+.fb_iframe_widget {
+	display: inline-block;
+	position: relative
+}
+
+.fb_iframe_widget span {
+	display: inline-block;
+	position: relative;
+	text-align: justify
+}
+
+.fb_iframe_widget iframe {
+	position: absolute
+}
+
+.fb_iframe_widget_lift {
+	z-index: 1
+}
+
+.fb_hide_iframes iframe {
+	position: relative;
+	left: -10000px
+}
+
+.fb_iframe_widget_loader {
+	position: relative;
+	display: inline-block
+}
+
+.fb_iframe_widget_fluid {
+	display: inline
+}
+
+.fb_iframe_widget_fluid span {
+	width: 100%
+}
+
+.fb_iframe_widget_loader iframe {
+	min-height: 32px;
+	z-index: 2;
+	zoom: 1
+}
+
+.fb_iframe_widget_loader .FB_Loader {
+	background:
+		url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif)
+		no-repeat;
+	height: 32px;
+	width: 32px;
+	margin-left: -16px;
+	position: absolute;
+	left: 50%;
+	z-index: 4
+}
+</style>
+</head>
+<body data-twttr-rendered="true" class="viewing-page-1">
+	<ul class="onepage-pagination">
+		<li><a class="active" data-index="1" href="#1"></a></li>
+		<li><a class="" data-index="2" href="#2"></a></li>
+		<li><a class="" data-index="3" href="#3"></a></li>
+		<li><a class="" data-index="4" href="#4"></a></li>
+		<li><a class="" data-index="5" href="#5"></a></li>
+	</ul>
+	<div class=" fb_reset" id="fb-root">
+		<div
+			style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+			<div>
+				<iframe src="Aims_files/7r8gQb8MIqE.html"
+					style="border: medium none;" tabindex="-1"
+					title="Facebook Cross Domain Communication Frame"
+					aria-hidden="true" id="fb_xdm_frame_http" scrolling="no"
+					allowtransparency="true" name="fb_xdm_frame_http" frameborder="0"></iframe>
+				<iframe src="Aims_files/7r8gQb8MIqE_002.html"
+					style="border: medium none;" tabindex="-1"
+					title="Facebook Cross Domain Communication Frame"
+					aria-hidden="true" id="fb_xdm_frame_https" scrolling="no"
+					allowtransparency="true" name="fb_xdm_frame_https" frameborder="0"></iframe>
+			</div>
+		</div>
+		<div
+			style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+			<div></div>
+		</div>
+	</div>
+	<div
+		style="position: relative; transform: translate3d(0px, 0%, 0px); transition: all 1000ms ease 0s;"
+		class="main onepage-wrapper">
+		<section data-index="1"
+			style="position: absolute; left: 0px; top: 0%;"
+			class="page1 section active">
+			<div class="containerMain">
+				<header>
+					<!--<a href="/"><h1 id="logo">
+                Aims
+                </h1></a>-->
+				</header>
+
+				<img src="Aims_files/icon.png" class="icon" alt="Appstore icon">
+
+				<div class="content">
+					<h1>Aims</h1>
+					<div class="text">
+						<h2>Incredible power of productivity</h2>
+					</div>
+				</div>
+				<form action="#" method="post">
+					<p>We'll notify you when it's ready!</p>
+					<input name="email" placeholder="Email address" type="text">
+					<input class="but" name="registration" value="Sign up"
+						type="submit">
+					<p class="message  "></p>
+				</form>
+
+			</div>
+
+			<div class="playbutton">
+				<a
+					href="http://fast.wistia.net/embed/iframe/6yhojs0p09?popover=true"
+					class="wistia-popover[height=360,playerColor=7b796a,width=640]"><img
+					src="Aims_files/playbutton.png" alt="playbuton"></a>
+			</div>
+			<!-- <a href="https://itunes.apple.com/" target="itunes_store"><img src="img/appstore.png" class= "appstore" alt="Appstore button"></a> -->
+		</section>
+
+		<section data-index="2"
+			style="position: absolute; left: 0px; top: 100%;"
+			class="page2 section">
+			<div class="screenshot">
+				<video id="video1" onmouseover="this.play();">
+					<source src="Aims_files/screen1.webm" type="video/webm">
+					<source src="Aims_files/screen1.mp4" type="video/mp4">
+					Your Browser does not support Video
+				</video>
+				<!--<img class="screenshot" src="img/gif3.gif">-->
+			</div>
+			<div class="container">
+				<div class="content">
+					<h2>Create your Aims</h2>
+					<p>
+						Firstly create your Aim. Set <b>finish date</b> and <b>priority</b>.
+						Every Aim naturally has different <b>preference</b> for you.
+						Prioritize it.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section data-index="3"
+			style="position: absolute; left: 0px; top: 200%;"
+			class="page3 section">
+			<div class="screenshot">
+				<video id="video2" onmouseover="this.play();">
+					<source src="Aims_files/screen2.webm" type="video/webm">
+					<source src="Aims_files/screen2.mp4" type="video/mp4">
+					Your Browser does not support Video
+				</video>
+			</div>
+			<div class="container">
+				<div class="content">
+					<h2>Timeline to success</h2>
+					<p>
+						Simply <b>add</b> tasks to timeline of your Aim. You can assign
+						specific <b>competion dates</b> to interim tasks.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section data-index="4"
+			style="position: absolute; left: 0px; top: 300%;"
+			class="page4 section">
+			<div class="screenshot">
+				<video id="video3" onmouseover="this.play();">
+					<source src="Aims_files/screen3.webm" type="video/webm">
+					<source src="Aims_files/screen3.mp4" type="video/mp4">
+					Your Browser does not support Video
+				</video>
+			</div>
+			<div class="container">
+				<div class="content">
+					<h2>Focus on important</h2>
+					<p>
+						Tasks automatically come up. Just <b>complete</b> tasks in box and
+						watch how you are <b>getting done</b>. Aims help you to truly
+						understand what’s the most important task you have set.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section data-index="5"
+			style="position: absolute; left: 0px; top: 400%;"
+			class="page5 section">
+			<div class="container">
+				<h2>Team</h2>
+				<div class="profile">
+					<div class="img tobias"></div>
+					<h3>Tobiáš Richter</h3>
+					<div class="links">
+						<p>
+							<a href="https://twitter.com/richtertobias" target="_blank">Twitter</a>
+							| <a href="http://tobiasrichter.cz/" target="_blank">Web</a>
+						</p>
+					</div>
+					<p></p>
+				</div>
+				<div class="profile">
+					<div class="img vojta"></div>
+					<h3>Vojtěch Dušek</h3>
+					<div class="links">
+						<a href="https://www.facebook.com/dusek.vojtech" target="_blank">Facebook</a>
+					</div>
+					<p></p>
+				</div>
+			</div>
+			<footer>
+				<p>
+					Copyright 2014 | <a href="http://www.aims-app.com/presskit.zip">Press</a>
+					| <a href="mailto:contact@aims-app.com">Support</a> | <a
+						href="mailto:contact@aims-app.com">Contact Us</a>
+				</p>
+
+				<div class="social">
+					<iframe style="width: 107px; height: 20px;"
+						data-twttr-rendered="true" title="Twitter Tweet Button"
+						class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal"
+						src="Aims_files/tweet_button.html" allowtransparency="true"
+						scrolling="no" id="twitter-widget-0" frameborder="0"></iframe>
+
+					<!-- <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" ></div> -->
+					<div
+						fb-iframe-plugin-query="app_id=&amp;href=http%3A%2F%2Fwww.aims-app.com%2F&amp;layout=button_count&amp;locale=cs_CZ&amp;sdk=joey"
+						fb-xfbml-state="rendered" class="fb-share-button fb_iframe_widget"
+						data-layout="button_count">
+						<span style="vertical-align: bottom; width: 84px; height: 20px;"><iframe
+								class="" src="Aims_files/share_button.html"
+								style="border: medium none; visibility: visible; width: 84px; height: 20px;"
+								title="fb:share_button Facebook Social Plugin" scrolling="no"
+								allowtransparency="true" name="f2f66fd89dbd8c2" frameborder="0"
+								height="1000px" width="1000px"></iframe></span>
+					</div>
+				</div>
+
+			</footer>
+		</section>
+	</div>
+	<div style="top: 60%;" class="iphoneMockup">
+		<img style="opacity: 1;" id="iphone" class="iphone"
+			src="Aims_files/iphoneMockups.png" alt="iphone mockup">
+	</div>
+
+
+
+	<script> 
+        $(".main").onepage_scroll();
+
+        document.addEventListener("touchmove", function(event){
+        event.preventDefault();
+        });
+        </script>
+
+
+
+	<div id="GWDANG_HAS_BUILT"></div>
+	<link rel="stylesheet" id="wistia_popover_css"
+		href="Aims_files/jquery.css">
+</body>
+</html>

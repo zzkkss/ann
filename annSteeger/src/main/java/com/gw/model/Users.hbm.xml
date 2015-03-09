@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.gw.model">
+	<class
+		name="Users"
+		table="users"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="string"
+			column="username"
+		>
+			<generator class="native"/>
+		</id>
+
+		<property
+			name="Password"
+			column="password"
+			type="string"
+			not-null="false"
+			length="50"
+		/>
+		<property
+			name="Enabled"
+			column="enabled"
+			type="boolean"
+			not-null="false"
+		/>
+	
+
+		<set name="Authorities" inverse="true">
+			<key column="username"/>
+			<one-to-many class="Authorities"/>
+		</set>
+
+
+	</class>	
+</hibernate-mapping>

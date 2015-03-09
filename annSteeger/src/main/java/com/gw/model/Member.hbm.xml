@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.gw.model">
+	<class
+		name="Member"
+		table="member"
+	>
+		<meta attribute="sync-DAO">false</meta>
+
+		<meta attribute="sync-DAO">false</meta>
+
+		<id
+			name="Id"
+			type="integer"
+			column="Id"
+		>
+			<generator class="native"/>
+		</id>
+
+		<property
+			name="Name"
+			column="name"
+			type="string"
+			not-null="false"
+			length="255"
+		/>
+		<property
+			name="Phone"
+			column="phone"
+			type="string"
+			not-null="false"
+			length="255"
+		/>
+		<property
+			name="Address"
+			column="address"
+			type="string"
+			not-null="false"
+			length="255"
+		/>
+		<property
+			name="Email"
+			column="email"
+			type="string"
+			not-null="false"
+			length="255"
+		/>
+		<property
+			name="Demand"
+			column="demand"
+			type="string"
+			not-null="false"
+		/>
+		<property
+			name="Time"
+			column="time"
+			type="timestamp"
+			not-null="false"
+			length="19"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

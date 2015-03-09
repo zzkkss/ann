@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.gw.model">
+	<class
+		name="Work"
+		table="work"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="integer"
+			column="id"
+		>
+			<generator class="native"/>
+		</id>
+
+		<property
+			name="Name"
+			column="name"
+			type="string"
+			not-null="false"
+			length="255"
+		/>
+		<property
+			name="Place"
+			column="place"
+			type="string"
+			not-null="false"
+			length="255"
+		/>
+		<property
+			name="Quantity"
+			column="quantity"
+			type="integer"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Addtime"
+			column="addtime"
+			type="timestamp"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Imgpath"
+			column="imgpath"
+			type="string"
+			not-null="false"
+		/>
+		<property
+			name="Content"
+			column="content"
+			type="string"
+			not-null="false"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

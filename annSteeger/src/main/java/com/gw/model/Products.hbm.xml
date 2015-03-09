@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.gw.model">
+	<class
+		name="Products"
+		table="products"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="integer"
+			column="id"
+		>
+			<generator class="native"/>
+		</id>
+
+		<property
+			name="Name"
+			column="name"
+			type="string"
+			not-null="false"
+			length="45"
+		/>
+		<property
+			name="Imgpath"
+			column="imgpath"
+			type="string"
+			not-null="false"
+		/>
+		<property
+			name="Ename"
+			column="ename"
+			type="string"
+			not-null="false"
+			length="150"
+		/>
+		<property
+			name="Ad1"
+			column="ad1"
+			type="string"
+			not-null="false"
+		/>
+		<property
+			name="Ad2"
+			column="ad2"
+			type="string"
+			not-null="false"
+		/>
+		<property
+			name="Type"
+			column="type"
+			type="string"
+			not-null="false"
+			length="11"
+		/>
+		<property
+			name="Addtime"
+			column="addtime"
+			type="timestamp"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Content"
+			column="content"
+			type="string"
+			not-null="false"
+		/>
+		<property
+			name="Capacity"
+			column="capacity"
+			type="string"
+			not-null="false"
+			length="11"
+		/>
+		<property
+			name="Firstimg"
+			column="firstimg"
+			type="string"
+			not-null="false"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

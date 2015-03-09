@@ -1,0 +1,1471 @@
+*{
+	margin: 0;
+	-webkit-appearance: none;
+}
+/*html5*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+a{
+  text-decoration: none;
+}
+
+div {
+	display: block;
+}
+
+
+
+html{
+	height: 100%
+}
+
+
+body{
+	
+	 font-family: "Microsoft YaHei";
+	 font-size:16px;;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: block;
+	background-color: #EBEBEB;
+}
+
+a:hover{
+	opacity: .5;
+}
+
+#logo{
+	padding: 20px 0 0 60px;
+}
+
+header{
+	width: 100%;
+	/*height: 100px;*/
+	background-color: #f8f6f0;
+	position: relative;
+}
+header a {
+	color: #0091C2;
+}
+
+nav {
+	background-color: #787878;
+	/*height: 30px; */
+	position: relative;
+	
+}
+
+nav ul {
+list-style-type:none;
+padding: 10px 0 25px 50px;
+}
+
+nav li{
+display: inline;
+margin: 0 40px 0 0
+}
+
+.main {
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+}
+
+section {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+#wistia_video_grid_main {
+	height: auto;
+}
+
+.appstore {
+	
+	/* margin: 80px 0 0 110px; */
+	top: 80%;
+	width: 15%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 70%;
+	position: fixed;
+}
+.logoy {
+  background-image: url("../../img/front/1/1_0000_logoy.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 4%;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  width: 5%;
+}
+
+.container {
+  background-image: url("../../img/front/2/2_0000_annsteeger.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 0;
+  margin: -13% auto 0;
+  padding-bottom: 25%;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  vertical-align: middle;
+  width: 55%;
+}
+.p5container {
+  margin: -22% auto 0;
+  padding-bottom: 40%;
+}
+.p6container {
+  margin-top: -18%;
+  padding-bottom: 32%;
+  top: 50%;
+  width: 60%;
+}
+.p1container {
+  margin-top: -15%;
+  top: 50%;
+  width: 25%;
+}
+.p3container {
+  margin-top: -23%;
+  padding-bottom: 33%;
+  width: 60%;
+}
+.p2container {
+  background-image: url("../../img/front/2/2_0000_annsteeger.png");
+  margin-left: 22.5%;
+  padding-bottom: 27%;
+  top: 45%;
+  width: 60%;
+}
+.p2-1container {
+  background-image: url("../../img/front/2/2_0000_annsteeger1.png");
+  margin-left: 22.5%;
+  padding-bottom: 34%;
+  top: 45%;
+  width: 60%;
+}
+.p7container {
+  margin-top: -11%;
+  padding-bottom: 25%;
+  top: 50%;
+  width: 65%;
+}
+.containerDisplay {
+ /* 
+display: none; */
+   /* background: #263c7b;
+	color: #f60;
+	text-shadow: 2px 2px 10px #f00; */
+	padding-bottom:0%;
+	  opacity: 0;
+filter:alpha(opacity=0); /* 针对 IE8 以及更早的版本 */
+	top:-50%;
+	padding:0;
+	margin-top:0;
+	transition: top 1s ease-out,padding-bottom 1s ease-out,opacity 1s ease-out;
+-moz-transition: top 1s ease-out,padding-bottom 1s ease-out,opacity 1s ease-out; /* Firefox 4 */
+-webkit-transition: top 1s ease-out,padding-bottom 1s ease-out,opacity 1s ease-out;/* Safari and Chrome */
+-o-transition: top 1s ease-out,padding-bottom 1s ease-out,opacity 1s ease-out; /* Opera */
+-ms-transition:top 1s ease-out,padding-bottom 1s ease-out,opacity 1s ease-out;
+/* 	transition:all 1s ease-out,width 1s ease-out, height 1s ease-out,padding-bottom 1s ease-out;
+-moz-transition:all 1s ease-out,width 1s ease-out, height 1s ease-out,padding-bottom 1s ease-out; Firefox 4
+-webkit-transition:all 1s ease-out,width 1s ease-out, height 1s ease-out,padding-bottom 1s ease-out;Safari and Chrome
+-o-transition:all 1s ease-out,width 1s ease-out, height 1s ease-out,padding-bottom 1s ease-out; Opera
+-ms-transition:all 1s ease-out,width 1s ease-out, height 1s ease-out,padding-bottom 1s ease-out; */
+} 
+
+
+#p1 .llogo{
+	background-image: url("../../img/front/1/1_0000_Badge.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:100%;
+	height:0%;
+	padding-bottom:100%;
+	margin-top: -50%;
+}
+#p1 .content {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 0;
+  position: relative;
+  width: 100%;
+  margin-top: 10%;
+}
+#p1 div a {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  float: left;
+  height: 0;
+  margin-left: 6%;
+  padding-bottom: 11%;
+  position: relative;
+  width: 28%;
+}
+#p1 div .tb{
+  margin-left: 20%;
+	background-image: url("../../img/front/1/1_0002_tb.png");
+}
+#p1 div .hx{
+	background-image: url("../../img/front/1/1_0003_hx.png");
+}
+
+#p2 .wen {
+  border-style: solid;
+  color: #fff;
+  font-size: 60%;
+  line-height: 150%;
+  margin: 0 auto;
+  padding: 1%;
+  text-align: center;
+  vertical-align: middle;
+}
+#p2 .tu {
+  background-image: url("../../img/front/2/2_0_0000_ann.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80% 64%;
+  margin-top: 3%;
+  padding-bottom: 25%;
+  width: 100%;
+}
+#p2 .wen1 {
+  color: #fff;
+  font-size: 52%;
+  line-height: 200%;
+   white-space: nowrap;
+}
+#p2-1 .wen {
+  border-style: solid;
+  color: #fff;
+  font-size: 70%;
+  line-height: 150%;
+  margin: 0 auto;
+  padding: 1%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#p2-1 .tu {
+ /*  background-image: url("../../img/front/2/2_0_0000_ann.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 59%;
+  margin-top: 0;
+  padding-bottom: 23%;
+  width: 100%;
+   white-space: nowrap;
+    */
+    background-image: url("../../img/front/2/2_0_0000_ann.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80% 64%;
+  margin-top: 3%;
+  padding-bottom: 25%;
+  width: 100%;
+}
+#p2-1 .wen1 {
+  color: #fff;
+  font-size: 52%;
+  line-height: 200%;
+  white-space: nowrap;
+}
+#p2-1 .tu1 {
+  background-image: url("../../img/front/3/3_1_0000s_0004_heng.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 65% 40%;
+  margin-top: 3%;
+  padding-bottom: 1%;
+  width: 100%;
+}
+#p2-1 .wen2 {
+  color: #fff;
+  font-size: 85%;
+  line-height: 200%;
+}
+#p2-1 .wen3 {
+  color: #fff;
+  font-size: 50%;
+  line-height: 200%;
+}
+#p4  .zuo{
+	cursor:pointer;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:50%;
+	height:0%;
+	padding-bottom:50%;
+	display: block;
+	float: left;
+	
+}
+#p4  .you,#p4  .you2,#p4  .you2 .cplist,#p4  .you .cplist{
+	
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:50%;
+	height:0%;
+	padding-bottom:50%;
+	display: block;
+	float: left;
+	
+}
+#p4 .zuo .zuoshang {
+  color: #fff;
+  font-size: 75%;
+  font-style: normal;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 10%;
+  padding-top: 3%;
+  width: 100%;
+}
+#p4 .zuo .zuozhong {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 0;
+  margin-left: 10%;
+  padding-bottom: 60%;
+  width: 75%;
+}
+#p4 .zuo .zuoxia {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 0;
+  margin-top: 3%;
+  padding-bottom: 10%;
+  width: 100%;
+}
+#p4 .zuoxia a {
+  background-image: url("../../img/front/5/5_0000s_0000_tb.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 0;
+  left: 20%;
+  padding-bottom: 16%;
+  position: relative;
+  width: 32%;
+}
+#p4 .zuoxia .hx{
+	background-image: url("../../img/front/5/5_0000s_0001_hx.png");
+} 
+
+#p4 .you{
+	 margin-top:-50%;
+  float: right;
+  position: relative;
+  right: 0;
+  font-size: 70%;
+}
+#p4 .you2 {
+	 float: right;
+  position: relative;
+z-index:99;
+  right: 0;
+}
+#p4 .you3 {
+  background-color: #d0d0d0;
+  display: none;
+  float: right;
+  margin-top: -50%;
+  overflow: hidden;
+  padding-bottom: 42%;
+  position: relative;
+  right: 0;
+  width: 51%;
+  z-index: 100;
+}
+#p4 .you3 .x {
+  color: #000;
+  float: right;
+  width: 15px;
+}
+ #p4 .you div,#p4 .you2 div {
+		
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:100%;
+	display: block;
+	height:0%;
+	padding-bottom:45%;
+}
+
+
+#p4 .you .cplist {
+  background-color: #e7e7e7;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  height: 100%;
+  margin-right: 1%;
+  margin-top: 4px;
+  padding-bottom: 45%;
+  position: relative;
+  width: 32%;
+  	  opacity: 0.8;
+filter:alpha(opacity=80); /* 针对 IE8 以及更早的版本 */
+}
+#p4 .you2 .cplist{
+		/* background-image: url("../../img/front/4/4_cplist_bg.png"); */
+		 background-color:#000;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	padding-bottom:45%;
+	width:32%;
+	display: block;
+	height:100%;
+	margin-right: 4px;
+	margin-top: 4px;
+	color: #fff;
+	  opacity: 0;
+filter:alpha(opacity=0); /* 针对 IE8 以及更早的版本 */
+	overflow:hidden;
+}
+#p4 .you2 .cplist:HOVER{
+		  opacity: 1;
+filter:alpha(opacity=100); /* 针对 IE8 以及更早的版本 */
+}
+#p4 .you .youshang div,#p4 .you2 .youshang div{
+	overflow:hidden;
+	margin-top: 0px;
+}
+#p4  .you div div .cplistd{
+	background-image: url("../../img/front/4/4_cplist_bg.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:80%;
+	left:10%;
+	margin-top:10%;
+	height:0;
+	display: block;
+	float: left;
+	 padding-bottom: 80%;
+}
+#p4 .you .cplistd .imgg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  margin-left: 15%;
+  margin-top: 15%;
+  padding-bottom: 70%;
+  width: 70%;
+}
+#p4 .you2 div div .cplistd {
+  font-size: 40%;
+  font-weight: bold;
+  margin-top: 10%;
+  overflow: hidden;
+  padding-bottom: 30%;
+  padding-left: 23%;
+  width: 55%;
+}
+#p4  .you2  .xx{
+	font-size:40%;
+	padding-bottom: 30%;
+	cursor: pointer;
+	font-style: italic;
+	text-decoration: underline;
+}
+#p4 .you div div .cplistw {
+  display: block;
+  float: left;
+  height: 0;
+  left: 20%;
+  margin-top: 10%;
+  position: relative;
+  width: 60%;
+  word-wrap: break-word;
+  font-size: 65%;
+}
+#p4 .you2 div div .cplistw {
+  font-size: 40%;
+  overflow: hidden;
+  padding-bottom: 80%;
+  padding-left: 5%;
+  text-align: left;
+  width: 90%;
+  word-wrap: break-word;
+}
+#p4  .you div div .cplistw span{
+	display: block;
+}
+#p5  div{
+	
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:100%;
+	height:0%;
+	padding-bottom:50%;
+	display: block;
+	float: left;
+	
+}
+#p5 .zuo{
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:40%;
+	display: block;
+	height:0%;
+	padding-bottom:40%;
+	background-image: url("../../img/front/5/5_0004_jingyou.png");
+	margin-top: 5%;
+	left: 10%;
+	cursor: pointer;
+}
+#p5 .youshang{
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:40%;
+	display: block;
+	height:0%;
+	padding-bottom:40%;
+	background-image: url("../../img/front/5/5_0000_xiangdai.png");
+	float: right;
+	right: 10%;
+	cursor: pointer;
+}
+ #p5 .zuoxia{
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:40%;
+	display: block;
+	height:0%;
+	padding-bottom:40%;
+	
+} 
+#p5 .zuoxia a {
+  background-image: url("../../img/front/5/5_0000s_0000_tb.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 0;
+  padding-bottom: 20%;
+  position: relative;
+  width: 40%;
+  float: none;
+  left: 55%;
+  cursor: pointer;
+  display:block;
+  
+}
+#p5 .zuoxia .hx{
+	background-image: url("../../img/front/5/5_0000s_0001_hx.png");
+} 
+ #p5 .youxia{
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:40%;
+	display: block;
+	height:0%;
+	padding-bottom:40%;
+	cursor:pointer;
+	float: right;
+	right: 20%;
+	margin-top: -15%;
+background-image: url("../../img/front/5/5_0002_lazhu.png");
+} 
+#p6  .shang,#p6 .zhong ,#p6 .xia{
+	
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:100%;
+	height:0%;
+	padding-bottom:15%;
+	display: block;
+	float: left;
+	margin-top: 5px
+}
+#p6 .gundongtiao {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+  height: 0;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+#p6 .gundongtiao ul {
+  margin: 0 auto;
+  width: 100%;
+   text-align: center;
+   padding: 0;
+}
+#p6 .gundongtiao ul li {
+  background-color: #878787;
+  border-radius: 7px;
+  display: inline-block;
+  zoom:1;*display:inline;
+ 
+  height: 12px;
+  list-style: outside none none;
+  margin: 0 5px 0 auto;
+  width: 12px;
+}
+#p6 .gundongtiao ul .active {
+  background-color: #fff;
+  height: 14px;
+  width: 14px;
+  margin-bottom: -1px;
+}
+/* #p6 .gundongtiao ul {
+  padding-bottom: 10%;
+  padding-left: 50%;
+  text-align: center;
+  width: 50%;
+}
+#p6 .gundongtiao li {
+  float: left;
+  font-size: 40px;
+  height: 10%;
+  margin: 0 auto;
+  text-align: center;
+  width: 6%;
+} */
+#p6  .shang div,#p6  .zhong div,#p6  .xia div{
+	background-color:#e1e6ea;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:49%;
+	height:0%;
+	padding-bottom:13%;
+	display: block;
+	float: left;
+	
+}
+#p6 div div .imgg {
+  background-color: #878787;
+  background-size: 100% 100%;
+  height: 0;
+  margin: 0;
+  padding-top: 17.7%;
+  width: 30%;
+}
+#p6  div div .wen{
+	
+	width:70%;
+	
+}
+#p6 div div .wen div {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 32%;
+  width: 100%;
+}
+/* #p6 div div .wen .con {
+  line-height: 64%;
+} */
+#p6 div div .wen .tit {
+  height: 0;
+  margin: 0;
+  padding-bottom: 12%;
+  width: 100%;
+}
+#p6 div div .wen .tit .titt {
+  display: block;
+  float: left;
+  font-size: 50%;
+  padding-top: 2%;
+  width: 75%;
+}
+#p6 div div .wen .tit .titti {
+	
+  display: block;
+  float: left;
+  font-size: 30%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 5%;
+  padding-top: 3%;
+  width: 24%;
+}
+#p6 div div .wen .con span {
+  display: block;
+  float: left;
+  font-size: 40%;
+  height: 0;
+  left: 4%;
+  overflow: hidden;
+  padding-bottom: 28%;
+  position: relative;
+  text-align: left;
+  width: 80%;
+  word-wrap: break-word;
+}
+#p6 div div .wen .con div {
+  background-image: url("../../img/front/6/6_youjiao.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  float: right;
+  height: 0;
+  margin-top: 5%;
+  padding-bottom: 15%;
+  width: 15%;
+}
+#p6  div .you{
+	margin-left: 5px;
+}
+
+#p7  div {
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+	position:relative;
+	width:20%;
+	height:0%;
+	padding-bottom:35%;
+	display: block;
+	float: left;
+	margin-right: 5%;
+}
+#p7  .zuo {
+	background-image: url("../../img/front/7/7_lianxi.png");
+}
+#p7 .zuo a {
+  cursor: pointer;
+  display: block;
+  float: right;
+  margin-top: 162%;
+  padding-bottom: 11%;
+  position: relative;
+  width: 11%;
+  margin-left: 4%;
+}
+/* #p7 .zuo .add {
+  color: #fff;
+  font-size: 41%;
+  margin-top: 45%;
+  padding: 0;
+  width: 100%;
+}
+#p7 .zuo .em {
+  color: #fff;
+  font-size: 41%;
+  margin-top: 10%;
+  padding: 0;
+  width: 100%;
+}
+#p7 .zuo .tel {
+  color: #fff;
+  font-size: 43%;
+  margin-top: 69%;
+  padding: 0;
+  text-align: right;
+  width: 100%;
+}
+#p7 .zuo .fax {
+  color: #fff;
+  font-size: 43%;
+  margin-top: 10%;
+  padding: 0;
+  text-align: right;
+  width: 100%;
+} */
+#p7  .zhong {
+	background-image: url("../../img/front/7/7_weixin.png");
+	width:34%;
+	padding-bottom:36%;
+}
+#p7  .you {
+	width:34%;
+	padding-bottom:34%;
+	margin: 0;
+}
+#p7 input, #p7 textarea {
+  background-color: #2f2f2f;
+  border: 0 none;
+  color: #878787;
+  display: block;
+  font-size: 45%;
+  height: 10%;
+  margin-bottom: 1%;
+  padding-left: 4%;
+  position: relative;
+  width: 100%;
+}
+#p7 .demand {
+  font-family: "Microsoft YaHei";
+  height: 45%;
+  margin-bottom: 2%;
+  overflow: hidden;
+  padding-top: 1%;
+}
+#p7 .submit {
+  cursor: pointer;
+  float: right;
+  margin-right: -4%;
+  width: 40%;
+}
+#p7 #memberTip {
+  color: red;
+  float: left;
+  width: 55%;
+  background-color: transparent;
+}
+#p3 .tu ,#p3-1 .tu{
+  background-image: url("../../img/front/3/3_1_0000s_0000_ann.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 23% 48%;
+  padding-bottom: 10%;
+  width: 100%;
+}
+#p3 .wen, #p3-1 .wen {
+  border-style: solid;
+  border-width: 2px;
+  color: #fff;
+  font-size: 60%;
+  margin: 0 auto;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  width: 18%;
+}
+#p3 .tu1 ,#p3-1 .tu1{
+  background-image: url("../../img/front/3/3_1_0000s_0001_COT.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 7%;
+  padding-bottom: 12%;
+  width: 100%;
+}
+#p3 .wen1 ,#p3-1 .wen1{
+  color: #fff;
+  font-size: 67%;
+  margin: 2% auto 0;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  width: 45%;
+}
+#p3 .tu2 ,#p3-1 .tu2{
+  background-image: url("../../img/front/3/3_1_0000s_0004_heng.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 65% 40%;
+  margin-top: 3%;
+  padding-bottom: 1%;
+  width: 100%;
+}
+#p3 .wen2 {
+  color: #fff;
+  font-size: 51%;
+  line-height: 226%;
+  margin: 4% auto 0;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  white-space: nowrap;
+  width: 100%;
+}
+#p3-1 .wen2 {
+  color: #fff;
+  font-size: 41%;
+  line-height: 226%;
+  margin: 4% auto 0;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  width: 100%;
+}
+#p3-1 .wen2 div {
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  float: left;
+  font-size: 120%;
+  height: 0;
+  margin-left: 1%;
+  padding-bottom: 23%;
+  text-align: center;
+  width: 18%;
+}
+#p3-1 .wen2 div .tit {
+  display: block;
+  font-size: 135%;
+  margin-left: 2%;
+  padding-top: 10%;
+  width: 96%;
+}
+#p3-1 .wen2 div .con {
+  display: block;
+  font-size: 100%;
+  line-height: 200%;
+  margin-left: 6%;
+  text-align: justify;
+  width: 88%;
+}
+#p2,#p2-1,#p3,#p3-1,#p4,#p5,#p6,#p7,#p1{
+	background-image: none;
+}
+#p5xx,#p6xx,#p4xxone{
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	min-width: 500px;
+}
+,#p4xx{
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	display: none;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	min-width: 500px;
+}
+#p4xx .contentdiv {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 0;
+  left: 10%;
+  opacity: 1;
+  padding-bottom: 80%;
+  position: relative;
+  top: 10%;
+  width: 80%;
+}
+#p4xx .contentdiv {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 0;
+  left: 10%;
+  opacity: 1;
+  padding-bottom: 0%;
+  position: relative;
+  top: 10%;
+  width: 80%;
+}
+#p4xx .p4x {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  font-size: 50%;
+  height: 0;
+  opacity: 1;
+  padding-bottom: 10%;
+  position: relative;
+  right: 10px;
+  text-align: right;
+  top: 10px;
+  width: 100%;
+}
+#p5xx .contentdiv {
+  background-image: url("../../img/front/5/5_cp_bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 0;
+  left: 30%;
+  margin-top: -25%;
+  opacity: 1;
+  padding-bottom: 40%;
+  position: relative;
+  top: 50%;
+  width: 40%;
+  filter:alpha(opacity=100); /* 针对 ie8 以及更早的版本 */
+}
+#p4xxone .contentdiv {
+  background-image: url("../../img/front/5/5_cp_bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 0;
+  left: 30%;
+  margin-top: -25%;
+  opacity: 1;
+  padding-bottom: 40%;
+  position: relative;
+  top: 50%;
+  width: 40%;
+  filter:alpha(opacity=100); /* 针对 ie8 以及更早的版本 */
+}
+#p6xx .p6x {
+  color: #878787;
+  cursor: pointer;
+  float: right;
+  font-size: 43%;
+  margin-top: 0%;
+  position: relative;
+  right: 2%;
+  width: 10%;
+  z-index: 999;
+}
+#p6xx .content {
+  font-style: italic;
+  padding-bottom: 10%;
+  padding-top: 2%;
+  text-align: center;
+}
+#p6xx .content .titname {
+  float: left;
+  font-size: 60%;
+  font-style: normal;
+  left: 10%;
+  position: relative;
+  text-align: center;
+  width: 80%;
+}
+#p6xx .content .tittime {
+  border-bottom-style: solid;
+  font-style: normal;
+  float: left;
+  font-size: 40%;
+  font-style: italic;
+  left: 5%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  position: relative;
+  text-align: center;
+  width: 90%;
+}
+#p6xx .contentdiv {
+  background-color: #fff;
+  border-color: #878787;
+  border-style: solid;
+  border-width: 5px;
+  color: #000;
+  height: 0;
+  left: 25%;
+  margin-top: -25%;
+  opacity: 1;
+  padding-bottom: 45%;
+  position: relative;
+  top: 50%;
+  width: 50%;
+filter:alpha(opacity=100); /* 针对 ie8 以及更早的版本 */
+}
+/* #p6xx .contentdiv .contentn .img1, #p6xx .contentdiv .contentn .img2, #p6xx .contentdiv .contentn .img3 {
+  background-position: center center;
+  background-size: 100% 100%;
+  float: left;
+  padding-bottom: 15%;
+  padding-right: 2%;
+  width: 32%;
+} */
+#p6xx .contentdiv .contentn .img3{
+	 padding-right: 0%
+}
+#p6xx .p6x {
+  background-image: url("../../img/front/6/6_zuo.png");
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: 25% 100%;
+}
+#p6xx .contentdiv .contentn {
+  height: 0;
+  left: 5%;
+  overflow-y: scroll;
+  overflow-x: none;
+  padding-bottom: 75%;
+  position: relative;
+  width: 90%;
+}
+#p6xx .contentdiv .contentn .conn {
+  float: left;
+  font-size: 50%;
+  height: 0;
+  padding-bottom: 68%;
+  padding-top: 3%;
+  position: relative;
+  width: 100%;
+}
+#p5xx .contentdiv .p5x, #p4xx .contentdiv .p4x , #p4xxone .contentdiv .p4xone {
+  color: #fff;
+  cursor: pointer;
+  font-size: 50%;
+  left: 95%;
+  padding-top: 15%;
+  position: relative;
+  width: 100%;
+}
+#p4xx .contentdiv .content {
+  
+  position: relative;
+  width: 100%;
+}
+#p4xx .contentdiv .content div{
+  overflow:hidden;
+}
+#p5xx .contentdiv .content,#p4xxone .contentdiv .content {
+  left: 20%;
+  position: relative;
+  width: 65%;
+}
+#p5xx .contentdiv .tit,#p4xxone .contentdiv .tit, #p4xx .contentdiv .tit {
+  height: 0;
+  padding-bottom: 40%;
+  position: relative;
+  width: 100%;
+}
+#p5xx .contentdiv .ad1, #p5xx .contentdiv .ad2, #p5xx .contentdiv .xx, #p4xxone .contentdiv .ad1, #p4xxone .contentdiv .ad2, #p4xxone .contentdiv .xx, #p4xx .contentdiv .xx {
+  border-top: 1px solid;
+  font-size: 40%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  text-align: left;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+#p5xx .contentdiv .xx,#p4xxone .contentdiv .xx {
+  height: 0;
+  padding-bottom: 30%;
+}
+#p5xx .contentdiv .ad1,#p4xxone .contentdiv .ad1 {
+  height: 0;
+  padding-bottom: 10%;
+}
+#p5xx .contentdiv .ad2,#p4xxone .contentdiv .ad2{
+  height: 0;
+  padding-bottom: 7%;
+  
+}
+#p4xx .contentdiv .ad1 {
+  border-top: 1px solid;
+  font-size: 40%;
+  height: 0;
+  margin-bottom: 3%;
+  padding-bottom: 10%;
+  padding-top: 3%;
+  text-align: left;
+  width: 100%;
+  word-wrap: break-word;
+}
+#p4xx .contentdiv .ad2 {
+  border-top: 1px solid;
+  font-size: 40%;
+  height: 0;
+  padding-bottom: 10%;
+  padding-top: 2%;
+  text-align: left;
+  width: 100%;
+  word-wrap: break-word;
+}
+#p4xx .titcon div {
+  font-size: 50%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 15%;
+  width: 100%;
+}
+#p4xx .titcon .titname {
+  font-weight: bold;
+  overflow: hidden;
+  padding-top: 20%;
+}
+#p4xx .titcon .titename {
+  font-size: 25%;
+  font-weight: bold;
+  overflow: hidden;
+}
+#p4xx .titcon .titrongliang{
+ overflow: hidden;
+}
+#p4xxone .contentdiv .tit .titimg{
+  background-image: url("../../img/front/4/4_zhuli.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+  padding-bottom: 35%;
+  position: relative;
+  width: 50%;
+}
+#p4xxone .contentdiv .tit .titcon {
+  float: right;
+  padding-top: 10%;
+  position: relative;
+  text-align: center;
+  width: 40%;
+}
+#p4xxone .titcon .titname {
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 50%
+}
+#p4xxone .titcon .titename {
+  font-size: 40%;
+  font-weight: bold;
+  overflow: hidden;
+}
+#p4xxone .titcon .titrongliang {
+  font-size: 50%;
+  font-weight: bold;
+  overflow: hidden;
+}
+#p5xx .contentdiv .tit .titimg, #p4xx .contentdiv .tit .titimg {
+  background-image: url("../../img/front/4/4_zhuli.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+  padding-bottom: 33%;
+  position: relative;
+  width: 50%;
+}
+#p5xx .contentdiv .tit .titcon {
+  float: right;
+  padding-top: 10%;
+  position: relative;
+  text-align: center;
+  width: 40%;
+}
+#p5xx .titcon .titname {
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 50%
+}
+#p5xx .titcon .titename {
+  font-size: 40%;
+  font-weight: bold;
+  overflow: hidden;
+}
+#p5xx .titcon .titrongliang {
+  font-size: 50%;
+  font-weight: bold;
+  overflow: hidden;
+}
+#p4xx .contentdiv .tit .titcon {
+  float: right;
+  position: relative;
+  text-align: center;
+  width: 49%;
+}
+#p4xxoneTouming,#p5xxTouming,#p6xxTouming,#p4xxoneTouming{
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity:0.8;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+filter:alpha(opacity=80); /* 针对 IE8 以及更早的版本 */
+}
+#p4 .you{
+	/* background-image: url("../../img/front/4/4_liebiao.png"); */
+}
+
+
+
+.iphoneMockup {
+bottom:0%;
+	/* height: 100%;*/
+	width: 100%; 
+	/* pointer-events:none; */
+	position: fixed;
+	text-align: center;
+	vertical-align: middle;
+	/* top: 50%; */
+	/* -webkit-transition: opacity 1s ease-in-out, top 0.5s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out, top 0.5s ease-in-out;
+	-o-transition: opacity 1s ease-in-out, top 0.5s ease-in-out;
+	transition: opacity 1s ease-in-out, top 0.5s ease-in-out; */
+
+}
+.iphoneMockup .enter {
+  background-image: url("../../img/front/1/1_0005_enter.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  cursor: pointer;
+  margin: 0 auto 2%;
+  padding-bottom: 1%;
+  width: 6%;
+}
+.iphoneMockup img {
+	/* height: 80%; */
+	width: auto !important;
+	margin: 0 auto ;
+	/* top: 50%;123
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%); */
+	position: relative;
+
+	/* -webkit-transition: opacity 1s ease-in-out, top 0.5s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out, top 0.5s ease-in-out;
+	-o-transition: opacity 1s ease-in-out, top 0.5s ease-in-out;
+	transition: opacity 1s ease-in-out, top 0.5s ease-in-out; */
+  padding-bottom: 2%;
+  width: 2%;
+   cursor: pointer;
+}
+
+
+/* section.page1.active{
+ opacity: 1;
+ background-image: url("../../img/front/1/1_bg.png");
+ background-size:100% 100%;
+}
+section.page2.active{
+ opacity: 1;
+ background-image: url("../../img/front/2/2_bg.png");
+ background-size:100% 100%;
+}
+section.page3.active{
+ opacity: 1;
+ background-image: url("../../img/front/3/3_bg.png");
+ background-size:100% 100%;
+}
+section.page4.active{
+ background-image: url("../../img/front/4/4_bg.png");
+ background-size:100% 100%;
+}
+section.page5.active{
+ background-image: url("../../img/front/5/5_bg.png");
+ background-size:100% 100%;
+}
+section.page6.active{
+ background-image: url("../../img/front/6/6_bg.png");
+ background-size:100% 100%;
+}
+section.page7.active{
+ background-image: url("../../img/front/7/7_bg.png");
+ background-size:100% 100%;
+} */
+section.page1.active{
+ opacity: 1;
+ background-image: url("../../img/front/1/1_bg_h.jpg");
+ background-size:100% 100%;
+}
+section.page2.active{
+ opacity: 1;
+ background-image: url("../../img/front/2/2_bg_h.jpg");
+ background-size:100% 100%;
+}
+section.page3.active{
+ opacity: 1;
+ background-image: url("../../img/front/3/3_bg_h.jpg");
+ background-size:100% 100%;
+}
+section.page4.active{
+ background-image: url("../../img/front/4/4_bg_h.jpg");
+ background-size:100% 100%;
+}
+section.page5.active{
+ background-image: url("../../img/front/5/5_bg_h.jpg");
+ background-size:100% 100%;
+}
+section.page6.active{
+ background-image: url("../../img/front/6/6_bg_h.jpg");
+ background-size:100% 100%;
+}
+section.page7.active{
+ background-image: url("../../img/front/7/7_bg_h.jpg");
+ background-size:100% 100%;
+}
+section.page1.active,section.page2.active,section.page3.active,section.page4.active,section.page5.active,section.page6.active,section.page7.active{
+	display: inline-block;
+}
+	/* opacity: 0;
+	 background-color: #878787;
+	 	transition: all 1s ease-out;
+-moz-transition: all 1s ease-out; Firefox 4
+-webkit-transition: all 1s ease-out;Safari and Chrome
+-o-transition: all 1s ease-out; Opera
+-ms-transition: all 1s ease-out; */
+/* 
+section.page1{
+ opacity: 1;
+ background-image: url("../../img/front/1/1_bg_s.jpg");
+ background-size:100% 100%;
+}
+section.page2{
+ opacity: 1;
+ background-image: url("../../img/front/2/2_bg_s.jpg");
+ background-size:100% 100%;
+}
+section.page3{
+ opacity: 1;
+ background-image: url("../../img/front/3/3_bg_s.jpg");
+ background-size:100% 100%;
+}
+section.page4{
+ background-image: url("../../img/front/4/4_bg_s.jpg");
+ background-size:100% 100%;
+}
+section.page5{
+ background-image: url("../../img/front/5/5_bg_s.jpg");
+ background-size:100% 100%;
+}
+section.page6{
+ background-image: url("../../img/front/6/6_bg_s.jpg");
+ background-size:100% 100%;
+}
+section.page7{
+ background-image: url("../../img/front/7/7_bg_s.jpg");
+ background-size:100% 100%;
+} */
+footer {
+  bottom: 1%;
+  color: rgb(253, 253, 253);
+  font-family: "SimSun";
+  font-size: 40%;
+  position: absolute;
+  width: 100%;
+}
+
+
+footer .zuo{
+	float: left;
+	margin-left: 1%;
+}
+footer .you{
+	float: right;
+	margin-right: 1%
+}
+
+}

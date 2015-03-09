@@ -1,0 +1,16 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+    <bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location">
+            <value>classpath:init.properties</value>
+        </property>
+    </bean>
+    <!--  实现UPLOAD.这里申明的id必须为multipartResolver  -->  
+    <bean id="multipartResolver"  
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver">  
+      
+        <!-- one of the properties available; the maximum file size in bytes -->  
+        <property name="maxUploadSize" value="100000000"/>  
+    </bean>  
+</beans>
